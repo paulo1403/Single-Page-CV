@@ -1,66 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My HTML CV</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="cv-container">
-    <header class="cv-header">
-      <h1>Paulo Llanos Colchado</h1>
-      <p class="job-title">Software Developer</p>
-      
-      <address class="contact-info">
-        <p>San Miguel, Lima, Peru</p>
-        <p>Phone: <a href="tel:+51999195557">+51 999 195 557</a></p>
-        <p>Email: <a href="mailto:paulollanosc@gmail.com">paulollanosc@gmail.com</a></p>
-      </address>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML CV</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cv-container">
+      <header class="cv-header">
+        <h1>Paulo Llanos Colchado</h1>
+        <p class="job-title">Software Developer</p>
 
-    <main class="cv-main">
-      <section class="cv-section">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>PostgreSQL</li>
-          <li>Git</li>
-        </ul>
-      </section>
+        <address class="contact-info">
+          <p>San Miguel, Lima, Peru</p>
+          <p>Phone: <a href="tel:+51999195557">+51 999 195 557</a></p>
+          <p>
+            Email:
+            <a href="mailto:paulollanosc@gmail.com">paulollanosc@gmail.com</a>
+          </p>
+        </address>
+      </header>
 
-      <section class="cv-section">
-        <h2>Education</h2>
-        <div class="education-item">
-          <h3>Bachelor of Engineering in Information Systems</h3>
-          <p class="institution">Universidad Peruana de Ciencias Aplicadas</p>
-          <p class="year">2016 - 2022</p>
-        </div>
-      </section>
+      <main class="cv-main">
+        <section class="cv-section">
+          <h2>Skills</h2>
+          <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>PostgreSQL</li>
+            <li>Git</li>
+          </ul>
+        </section>
 
-      <section class="cv-section">
-        <h2>Experience</h2>
-        <div class="experience-item">
-          <h3>Frontend Specialist</h3>
-          <p class="company">Rimac Seguros</p>
-          <p class="year">2023 - now</p>
-        </div>
+        <section class="cv-section">
+          <h2>Education</h2>
+          <div class="education-item">
+            <h3>Bachelor of Engineering in Information Systems</h3>
+            <p class="institution">Universidad Peruana de Ciencias Aplicadas</p>
+            <p class="year">2016 - 2022</p>
+          </div>
+        </section>
 
-      </section>
+        <section class="cv-section">
+          <h2>Experience</h2>
 
-      <section class="cv-section">
-        <h2>Languages</h2>
-        <ul class="language-list">
-          <li><span class="language">Spanish:</span> Native</li>
-          <li><span class="language">English:</span> Advance</li>
-        </ul>
-      </section>
-    </main>
-  </div>
-</body>
+          <div class="experience-item">
+            <h3>Frontend Specialist</h3>
+            <p class="company">Rimac Seguros</p>
+            <p class="year">2023 - Now</p>
+            <ul class="responsibilities">
+              <li>
+                Developed interactive and responsive user interfaces using
+                ReactJS, with a focus on mobile-first design to ensure optimal
+                performance across devices.
+              </li>
+              <li>
+                Led the migration from Redux to Zustand, streamlining state
+                management for better performance and maintainability.
+              </li>
+              <li>
+                Designed and implemented reusable React components and custom
+                hooks, fostering a modular and scalable architecture.
+              </li>
+              <li>
+                Optimized application performance by refining render logic,
+                minimizing unnecessary re-renders, and adhering to React best
+                practices.
+              </li>
+              <li>
+                Managed major upgrades, including migrating from Node.js 14 to
+                18 and upgrading Ant Design from v3 to v5, enhancing
+                compatibility, performance, and UI/UX.
+              </li>
+              <li>
+                Developed advanced mapping solutions with React-Leaflet,
+                integrating plugins like Leaflet TimeDimension and managing
+                multi-layer capabilities with Geoserver, while utilizing Zustand
+                for efficient state handling.
+              </li>
+              <li>
+                Built and deployed robust APIs using Node.js and AWS Lambda,
+                with authentication managed through AWS Amplify.
+              </li>
+              <li>
+                Ensured secure and consistent data validation with Yup and
+                Formik on the frontend, and JOI on the backend.
+              </li>
+              <li>
+                Wrote comprehensive tests with Jest to significantly improve
+                code coverage and ensure application reliability.
+              </li>
+            </ul>
+            <p class="summary">
+              Throughout my tenure, I prioritized creating mobile-friendly
+              designs, reusable components, and scalable solutions, while
+              improving performance and maintaining high code quality. My
+              contributions to projects like a fully-featured mapping platform
+              demonstrated my versatility as a full-stack developer with a
+              strong focus on frontend development and user-centric design.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Full Stack Developer</h3>
+            <p class="company">CRD</p>
+            <p class="year">2022 - 2023</p>
+            <ul class="responsibilities">
+              <li>
+                Developed interactive and responsive user interfaces using
+                ReactJS and NextJS.
+              </li>
+              <li>
+                Implemented static typing with TypeScript to enhance code
+                quality and maintainability.
+              </li>
+              <li>
+                Utilized libraries like Formik and Yup for form creation and
+                validation, ensuring a smooth and secure user experience.
+              </li>
+              <li>
+                Built robust and efficient APIs using NodeJS and Django on the
+                backend.
+              </li>
+              <li>
+                Worked with NoSQL databases such as MongoDB and
+                authentication/storage platforms like Firebase and AWS.
+              </li>
+              <li>Ensured secure and scalable data management and storage.</li>
+            </ul>
+            <p class="summary">
+              Throughout my tenure, I successfully contributed to the
+              development of various web applications, leveraging my skills in
+              frontend and backend development. This experience allowed me to
+              gain expertise in technologies like ReactJS, NextJS, NodeJS,
+              MongoDB, Firebase, AWS, and Django, while honing my
+              problem-solving abilities and collaborative skills in a team
+              environment.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Junior Frontend Developer</h3>
+            <p class="company">Fractal</p>
+            <p class="year">2022</p>
+            <ul class="responsibilities">
+              <li>
+                Developed robust and scalable APIs using .NET Core, and consumed
+                them on the frontend with AJAX to interact with data.
+              </li>
+              <li>
+                Implemented Razor technology to generate dynamic views and
+                optimize server-side content rendering, enhancing system
+                performance and responsiveness.
+              </li>
+              <li>
+                Developed a live chat feature using the Slack API and
+                WebSockets, enabling real-time, bidirectional communication for
+                instant and collaborative messaging.
+              </li>
+              <li>
+                Collaborated closely with the development team to improve and
+                enhance the Spiralia system, ensuring its success and user
+                satisfaction.
+              </li>
+            </ul>
+            <p class="summary">
+              Throughout my role, I gained hands-on experience with technologies
+              like .NET Core, AJAX, Razor, and WebSockets while tackling
+              challenges and delivering high-quality solutions. This experience
+              strengthened my skills in frontend development, API integration,
+              and real-time communication.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Junior Developer</h3>
+            <p class="company">Transforma Digital Peru</p>
+            <p class="year">2021 - 2022</p>
+            <ul class="responsibilities">
+              <li>
+                Developed the Lucy web system using the Django framework,
+                strengthening skills in creating robust and scalable web
+                applications.
+              </li>
+              <li>
+                Participated in the design and development of a customized
+                WordPress website for Unicon, utilizing SASS and PHP to enhance
+                appearance and functionality.
+              </li>
+              <li>
+                Created dynamic and high-performance web solutions by developing
+                custom WordPress themes and improving user experience.
+              </li>
+              <li>
+                Progressed to the role of Technical Lead within a "cell,"
+                enhancing leadership skills and further contributing to
+                Django-based projects.
+              </li>
+              <li>
+                Collaborated closely with the development team to ensure the
+                successful delivery of projects, taking on leadership
+                responsibilities.
+              </li>
+            </ul>
+            <p class="summary">
+              Throughout these experiences, I gained valuable expertise in
+              Django, WordPress, SASS, PHP, and related technologies. I
+              strengthened my technical skills and developed the ability to
+              effectively manage and lead a team, ensuring high-quality and
+              timely project delivery.
+            </p>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Languages</h2>
+          <ul class="language-list">
+            <li><span class="language">Spanish:</span> Native</li>
+            <li><span class="language">English:</span> Advance</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
