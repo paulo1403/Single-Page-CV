@@ -261,7 +261,6 @@
         const newTheme = currentTheme === "light" ? "dark" : "light";
         html.setAttribute("data-theme", newTheme);
 
-        // Update theme-color meta tag
         document
           .querySelector('meta[name="theme-color"]')
           .setAttribute(
@@ -269,7 +268,6 @@
             newTheme === "light" ? "#ffffff" : "#1a1a1a"
           );
 
-        // Update button icon
         const themeToggleButton = document.getElementById("theme-toggle");
         themeToggleButton.textContent = newTheme === "light" ? "🌓" : "🌞";
       }
