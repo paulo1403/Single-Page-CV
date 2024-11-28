@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
     <title>My HTML CV</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+      🌓
+    </button>
     <div class="cv-container">
       <header class="cv-header">
         <h1>Paulo Llanos Colchado</h1>
@@ -246,5 +254,25 @@
         </section>
       </main>
     </div>
+    <script>
+      function toggleTheme() {
+        const html = document.documentElement;
+        const currentTheme = html.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        html.setAttribute("data-theme", newTheme);
+
+        // Update theme-color meta tag
+        document
+          .querySelector('meta[name="theme-color"]')
+          .setAttribute(
+            "content",
+            newTheme === "light" ? "#ffffff" : "#1a1a1a"
+          );
+
+        // Update button icon
+        const themeToggleButton = document.getElementById("theme-toggle");
+        themeToggleButton.textContent = newTheme === "light" ? "🌓" : "🌞";
+      }
+    </script>
   </body>
 </html>
